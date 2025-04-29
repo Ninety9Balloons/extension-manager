@@ -47,8 +47,6 @@ function App() {
     setData(data.filter((item) => item.name !== itemName));
   };
 
-  // #EBF2FC 0%, #EEF8F9
-
   return (
     <div
       className={`${

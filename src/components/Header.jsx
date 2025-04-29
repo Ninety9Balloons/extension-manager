@@ -7,9 +7,7 @@ const Header = ({ setIsDark, isDark }) => {
       <div className="flex items-center ">
         <img
           src={`${
-            isDark
-              ? "/public/assets/images/logo-dark.svg"
-              : "/public/assets/images/logo.svg"
+            isDark ? "/assets/images/logo-dark.svg" : "/assets/images/logo.svg"
           }`}
           alt="Logo"
         />
@@ -21,7 +19,7 @@ const Header = ({ setIsDark, isDark }) => {
         onClick={() => setIsDark(!isDark)}
       >
         <img
-          src={`/public/assets/images/icon-${isDark ? "sun" : "moon"}.svg`}
+          src={`/assets/images/icon-${isDark ? "sun" : "moon"}.svg`}
           alt="Dark mode switch"
         />
       </button>
