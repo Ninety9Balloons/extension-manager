@@ -12,7 +12,7 @@ const Card = ({
   }
 
   return (
-    <div className="bg-neutral-000 dark:bg-neutral-700 p-4 rounded-xl border border-neutral-300 dark:border-neutral-600 mt-4 shadow-md">
+    <div className="bg-neutral-000 dark:bg-neutral-700 p-4 rounded-xl border border-neutral-300 dark:border-neutral-600 mt-4 shadow-md flex flex-col justify-between">
       <div className="flex items-start gap-4">
         {/* Logo */}
         <img src={logo} alt="Extension Image" />
@@ -26,7 +26,7 @@ const Card = ({
 
       {/* Remove Button */}
       <div className="flex justify-between items-center">
-        <div className="border border-neutral-300 dark:border-neutral-600 rounded-full px-3 py-1 flex items-center justify-center">
+        <div className="border border-neutral-300 dark:border-neutral-600 rounded-full px-3 py-1 flex items-center content-center">
           <button onClick={() => removeItem(name)} className="font-semibold">
             Remove
           </button>
