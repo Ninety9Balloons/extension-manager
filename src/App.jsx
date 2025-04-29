@@ -11,7 +11,7 @@ function App() {
 
   // Fetch and set the data.
   useEffect(() => {
-    fetch("../data.json")
+    fetch("assets/data.json")
       .then((response) => response.json())
       .then((data) => setData(data))
       .catch((error) => console.error("error", error));
@@ -51,9 +51,9 @@ function App() {
     <div
       className={`${
         isDark ? "dark" : ""
-      } w-full  h-full min-h-screen bg-linear-to-b from-[#EBF2FC] to-[#EEF8F9] dark:from-[#040918] dark:to-[#091540]  py-6 px-3 flex flex-col text-neutral-800 dark:text-white`}
+      } w-full  h-full min-h-screen min-w-[300px] bg-linear-to-b from-[#EBF2FC] to-[#EEF8F9] dark:from-[#040918] dark:to-[#091540]  py-6 px-3 flex flex-col text-neutral-800 dark:text-white`}
     >
-      <div className="flex flex-col mx-auto lg:max-w-3/4">
+      <div className="flex flex-col mx-auto  lg:max-w-3/4">
         {/* Header */}
         <Header setIsDark={setIsDark} isDark={isDark} />
 
