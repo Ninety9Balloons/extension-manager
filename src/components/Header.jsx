@@ -15,7 +15,7 @@ const Header = ({ setIsDark, isDark }) => {
 
       {/* Dark mode Button */}
       <button
-        className="bg-neutral-100 dark:bg-neutral-600 flex p-3 rounded-lg"
+        className="bg-neutral-100 dark:bg-neutral-600 flex p-3 rounded-lg cursor-pointer hover:bg-neutral-200 dark:hover:bg-neutral-500 transition-all"
         onClick={() => setIsDark(!isDark)}
       >
         <img

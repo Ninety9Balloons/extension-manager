@@ -26,7 +26,7 @@ const Card = ({
 
       {/* Remove Button */}
       <div className="flex justify-between items-center">
-        <div className="border border-neutral-300 dark:border-neutral-600 rounded-full px-3 py-1 flex items-center content-center">
+        <div className="border border-neutral-300 dark:border-neutral-600 hover:bg-neutral-100 dark:hover:bg-neutral-800 rounded-full px-3 py-1 flex items-center content-center transition-all">
           <button onClick={() => removeItem(name)} className="font-semibold">
             Remove
           </button>
